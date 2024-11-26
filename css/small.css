@@ -1,19 +1,51 @@
+/* Import Google fonts using Google import code. MUST BE PLACED BEFORE EVERYTHING ELSE! */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Outfit:wght@100..900&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*------------ BODY --------------*/
+body {
+    font-size: 16px;
+    font-family:"Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin: 1rem;
+
+    background-color: rgb(197, 222, 238); /* a light blue */
+    border: 5px;
+    border-color: pink;
+
+}
 h1, h2, h3 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:"Alice", serif;
 }
 
 h1 {
-    font-size: 2.3rem; /* use rem for auto resizing on different screen sizes */
+    font-size: 3.3rem; /* use rem for auto resizing on different screen sizes */
+    display: grid; /* sets display for h1 element to a grid. May just want to make a header and put it there. */
+    place-items: center; 
+    
 }
 
 h2 {
     text-decoration: underline;
+    display: grid; /* sets display for h1 element to a grid. May just want to make a header and put it there. */
+    place-items: center; 
 }
 
 li {
     list-style-type: none; /* removes the bullet or number from the <li> item */
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 0.2rem;   /* use margin instead of padding if you just want space between elements. Padding adds to the element size making it have more clickable or background area if you want that. */  
+    margin: 0.5rem;   /* use margin instead of padding if you just want space between elements. Padding adds to the element size making it have more clickable or background area if you want that. */  
+    padding: 0.8rem; /* padding lets you give each element a background color to fill. */
+    background-color: rgb(252, 253, 235); /* A very light yellow */
+    border-radius: 10px; /* rounds the corners */
+
 }
 
 .textbox {
