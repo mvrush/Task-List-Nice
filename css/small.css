@@ -44,6 +44,10 @@ h2 {
 
 }
 
+.submit-button { /* the . denotes 'class', in this case class="submit-button". */
+    margin-left: 0.25rem;
+}
+
 
 /*-----------------------------LIST-------------------------*/
 
