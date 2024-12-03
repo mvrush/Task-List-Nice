@@ -1,18 +1,20 @@
-/* 64em is also 1028px (if basefont is 16px), so these settings hold if screen resolution is 1028px or higher. */
+/* 64em is also 1028px (if basefont is 16px then 1028px/16px=64rem), so a 64rem setting holds if screen resolution is 1028px or higher. */
 
-/*--------- Start of Media Query, all changes within this bracket will hold screens larger than 1028px. --------------*/
-@media only screen and (min-width: 64rem) { 
+/*--------- Start of Media Query, all changes within this bracket will hold screens larger than 1280px (1280 px divided by 16px = 80rem). --------------*/
+@media only screen and (min-width: 80rem) { 
 
 /*----------------BODY------------------*/
 
+.input-container {
+    padding-left: 24rem; /* add padding to move the class="input-container" to the right. */ 
+
+}
 
 
 /*---------------LIST--------------------*/
 
 #outputList { /* the # is for 'id', in this case id="outputList" */
-    margin: 1rem, 10rem, 1rem, 10rem ; /* values go clockwist: top-right-bottom-left */
-    border: 10px;
-    border-color: red;
+    padding: 1rem 25rem 1rem 25rem; /* values go clockwist: top-right-bottom-left separated by spaces, not commas. */
 }
 
 

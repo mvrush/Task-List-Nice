@@ -39,6 +39,11 @@ h2 {
     place-items: center; 
 }
 
+.input-container {
+    padding-left: 0.5rem; /* add padding to move the class="input-container" to the right. */ 
+
+}
+
 
 /*-----------------------------LIST-------------------------*/
 
@@ -48,7 +53,7 @@ ul {
 
 li {
     list-style-type: none; /* removes the bullet or number from the <li> item */
-    margin: 0.5rem;   /* use margin instead of padding if you just want space between elements. Padding adds to the element size making it have more clickable or background area if you want that. */  
+    margin: 0.5rem 1rem 0.5rem 1rem;   /* use margin instead of padding if you just want space between elements. Padding adds to the element size making it have more clickable or background area if you want that. Values are top-right-bottom-left. */  
     padding: 0.8rem; /* padding lets you give each element some space to use a background color to fill. */
     background-color: rgb(252, 253, 235); /* A very light yellow */
     border-radius: 10px; /* rounds the corners */
