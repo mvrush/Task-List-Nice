@@ -8,7 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-/*------------ BODY --------------*/
+/*------------BODY--------------*/
 body {
     font-size: 16px;
     font-family:"Outfit", sans-serif;
@@ -38,6 +38,9 @@ h2 {
     display: grid; /* sets display for h1 element to a grid. May just want to make a header and put it there. */
     place-items: center; 
 }
+
+
+/*-----------------------------LIST-------------------------*/
 
 ul {
     padding-left: 0rem; /* remove the padding from the left side of the <ul> to center the list on small screen. */
