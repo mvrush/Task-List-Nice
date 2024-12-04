@@ -58,6 +58,10 @@ function addItem(newtask, isChecked = false) { // Function takes 2 arguments, 'n
     let checkbox = document.createElement("input"); // This creates a <input> tag
 
     let removeButton = document.createElement("button"); // creates a button
+    
+    // The following lines set the attributes for the <span> tag. i.e. when created it will look like this <span class="list-span">.
+    span.className = 'list-span'; // This adds the 'class' attribute to the <span> tag.
+    
     // The following lines set the attributes for the checkbox <input> tag. i.e. when created, it will look like this: <input type='checkbox' name ='listBox' value='complete' id='listBox'>
     checkbox.type = 'checkbox'; // The type sets it to a checkbox on the HTML page, it could be 'radio' if you'd prefer radio buttons. 'Type' is important!
     checkbox.name = 'listBox'; // 'name' attribute is the 'key' in a 'key/value' pair with the 'value' attribute, when sent with a form when submitted. I'm not using the form method here so it's less important.

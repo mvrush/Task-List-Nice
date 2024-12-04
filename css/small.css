@@ -18,8 +18,6 @@ body {
     margin: 1rem;
 
     background-color: rgb(197, 222, 238); /* a light blue */
-    border: 70px;
-    border-color: pink;
 
 }
 h1, h2, h3 {
@@ -55,13 +53,22 @@ ul {
     padding-left: 0rem; /* remove the padding from the left side of the <ul> to center the list on small screen. */
 }
 
+
 li {
+    display: grid; /* sets the display to grid so I can align the checkbox, text span, and remove box */
+    grid-template-columns: 25px 87% 20px; /* Sets the grid template to 3 columns. First column set to a px size that won't change as things get stretched to the right on resize. */
+    column-gap: 0.25rem; /* Sets the gap between grid items. I set it to a rem value so it will resize automatically. */
+    justify-items: center; /* justify centers left-right. Can also use justify-self on individual items in cells but you do that under the item tag, class, or id. */
+    align-items: center; /* align centers top-bottom. Can also use align-self. */
     list-style-type: none; /* removes the bullet or number from the <li> item */
     margin: 0.5rem 1rem 0.5rem 1rem;   /* use margin instead of padding if you just want space between elements. Padding adds to the element size making it have more clickable or background area if you want that. Values are top-right-bottom-left. */  
     padding: 0.8rem; /* padding lets you give each element some space to use a background color to fill. */
     background-color: rgb(252, 253, 235); /* A very light yellow */
     border-radius: 10px; /* rounds the corners */
+}
 
+.list-span { /* the . selects and item by 'class', in this case class="list-span". */
+    justify-self: left; /* Because I am using Grid on the <li> container that holds the span, I can use 'justify-self' to only justify the <span> itself. */
 }
 
 .textbox { /* the . selects an item by 'class', in this case class="textbox". */
@@ -69,11 +76,11 @@ li {
 }
 
 #listBox { /* the # selects an item by its 'id', in this case id="listBox". */
-    margin-right: 0.4rem;  /* Gives a bit of space between the checkbox and the text of the task item */
+    /*margin-right: 0.4rem;  /* Gives a bit of space between the checkbox and the text of the task item. DON'T NEED ANYMORE BECAUSE I SWITCHED TO GRID */
 }
 
 .remove-item { /* the . selects and item by 'class', in this case class="remove-item". */
-    float: right;
+    /*float: right; /* floats the item to the right side of the containing element. DON'T NEED ANYMORE BECAUSE I SWITCHED TO GRID */
 }
 
 /* the ':checked' psuedo-class targets the checked state of checkboxes. */
